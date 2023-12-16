@@ -15,31 +15,8 @@ const routes = [
         meta: {
           title: "Início",
         }
-      },
-      {
-        path: '/tasks',
-        name: 'TasksList',
-        component: () => import('@/views/TaskList.vue'),
-        meta: {
-          title: "Lista de Tarefas",
-        }
-      },
-      {
-        path: '/tasks/add',
-        name: 'TasksAdd',
-        component: () => import('@/views/TaskForm.vue'),
-        meta: {
-          title: "Adicionar Tarefa",
-        }
-      },
-      {
-        path: '/tasks/:id',
-        name: 'TasksEdit',
-        component: () => import('@/views/TaskForm.vue'),
-        meta: {
-          title: "Editar Tarefa",
-        }
       }
+      
     ]
   },
 
