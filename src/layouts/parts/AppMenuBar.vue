@@ -44,7 +44,9 @@ const items_menu = ref([
     <v-icon>mdi-dots-vertical</v-icon>
     <v-menu activator="parent">
       <v-list color="orange-darken-2">
-        <v-list-item prepend-icon="mdi-check-bold" title="Tarefas" :to="{ name: 'TasksList' }"></v-list-item>
+        <v-list-item prepend-icon="mdi-check-bold" title="Cadastro" :to="{ name: 'Cadastro' }"></v-list-item>
+        <v-divider></v-divider>
+        <v-list-item prepend-icon="mdi-check-bold" title="Lista de Usuários" :to="{ name: 'ListaUsuarios' }"></v-list-item>
         <v-divider></v-divider>
         <v-list-item exact prepend-icon="mdi-logout" title="Sair" @click="logout"></v-list-item>
       </v-list>

@@ -1,5 +1,6 @@
 // Composables
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
+
 
 const routes = [
   {
@@ -15,12 +16,33 @@ const routes = [
         meta: {
           title: "Início",
         }
+      },
+      {
+        path: '/cadastro',
+        name: 'Cadastro',
+        component: () => import('@/views/Cadastro.vue'),
+        meta: {
+        title: "Cadastro de Usuário",
+        }
+      },
+      {
+        path: '/lista-usuarios',
+        name: 'ListaUsuarios',
+        component: () => import('@/views/ListaUsuarios.vue'),
+        meta: {
+        title: "Lista de Usuários",
+        }
+      },
+      {
+        path: '/editar-usuario/:id',
+        name: 'EditarUsuario',
+        component: () => import('@/views/EditarUsuario.vue'),
+        meta: {
+        title: "Editar Usuário",
+        }
       }
-      
     ]
   },
-
-
   {
     path: '/login',
     name: 'Login',
@@ -34,4 +56,4 @@ const router = createRouter({
   routes,
 })
 
-export default router
+export default router;
