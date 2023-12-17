@@ -90,6 +90,19 @@
     background-color: #f5f5f5;
   }
 
+  button {
+  background-color: #ff8800;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fbc01c;
+}
   @media (max-width: 600px) {
     /* Estilos para telas menores que 600 pixels de largura */
     th, td {
